@@ -4,27 +4,27 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <style>
-      div {
-        position: relative;
-        margin: 16px;
-        border-bottom: 1px dotted black;
-        display: inline-block;
-      }
-      .tooltip {
-        background-color: grey;
-        color: white;
-        border-radius: 4px;
-        padding: 8px;
-        bottom: -40px;
-        display: none;
-      }
-      .text:hover .tooltip {
-        display: block;
-      }
-      .text.tooltip{
-        position: absolute;
-        z-index: 1;
-      }
+  .text{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    margin: 16px;
+  }
+
+
+  .text .tooltip{
+    display: none;
+    background-color: grey;
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 1;
+    bottom: -40px;
+  }
+  .text:hover .tooltip {
+    display: block;
+  }
     </style>
   </head>
 
